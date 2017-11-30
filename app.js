@@ -16,8 +16,11 @@ newImg.attr({'src': `http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.g
 $('li').click(function(){
 $('li').removeClass('selected');
 $(this).addClass('selected');
+$('img:eq(1)').attr('src','./images/' + $(this).text() + '.jpeg');
 });
-
+// $('li').click(function(){
+// $('img').attr('src','./images/milk.jpeg');
+// });
 })
 // var bold = document.querySelectorAll("li");
 // for (i = 0; i < bold.length; i++) {
